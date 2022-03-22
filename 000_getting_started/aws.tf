@@ -1,5 +1,5 @@
 resource "aws_instance" "my_server" {
-  ami           = "ami-087c17d1fe0178315"
+  ami           = "ami-0c02fb55956c7d316"
   instance_type = var.instance_type
 
   tags = {
@@ -7,7 +7,6 @@ resource "aws_instance" "my_server" {
   }
 }
 
-/*
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   providers = {
@@ -25,8 +24,7 @@ module "vpc" {
   enable_vpn_gateway = true
 
   tags = {
-    Terraform = "true"
+    Terraform   = "true"
     Environment = "dev"
   }
 }
-*/

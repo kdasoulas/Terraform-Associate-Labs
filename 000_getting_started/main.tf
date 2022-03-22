@@ -1,21 +1,22 @@
 terraform {
-  backend "remote" {
-    hostname = "app.terraform.io"
-    organization = "ExamPro"
+
+  cloud {
+    organization = "nonstoplearning"
 
     workspaces {
-      name = "getting-started"
+      name = "initial"
     }
   }
+
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "3.58.0"
+      version = "4.6.0"
     }
   }
 }
 
 locals {
-  project_name = "Andrew"
+  project_name = "first"
 }
