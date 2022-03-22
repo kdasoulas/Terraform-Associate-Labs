@@ -6,7 +6,7 @@ resource "aws_instance" "my_server" {
     Name = "MyServer-${local.project_name}"
   }
 }
-
+/*
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
   providers = {
@@ -28,3 +28,4 @@ module "vpc" {
     Environment = "dev"
   }
 }
+*/
